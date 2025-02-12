@@ -19,6 +19,7 @@
   color: #727272;
 }
 
+
 .primary-button{
 background-color: #FF900E;
 border: none;
@@ -39,9 +40,10 @@ header{
   font-weight: 800;
 }
 .navbar{
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-
+max-width: 1440px;
+margin: 0px auto;
 }
 .nav-links-container> ul > li{
 list-style: none;
@@ -49,10 +51,6 @@ margin-right: 30px;
 }
 .nav-links-container> ul > li > a{
   text-decoration: none;
-}
-
-.nav-links{
-
 }
 
 
@@ -74,11 +72,24 @@ margin-right: 30px;
   font-size: 1rem;
   font-weight: lighter;
 }
-
-.banner-image img{
-  max-width: 1200px;
+.banner-container{
+  max-width: 1440px;
+  margin: 0px auto;
 }
-.banner-image {
+
+.banner-image>img{
+  width: 70%;
+}
+.banner-image{
   margin: 20px auto;
   text-align: center;
+}
+
+
+/* responsiveness media query*/
+
+@media screen and (max-width:576px) {
+  .navbar,.nav-links{
+    flex-direction: column;
+  }
 }
